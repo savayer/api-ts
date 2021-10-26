@@ -1,5 +1,5 @@
 import ApiConfig from "../Contracts/ApiConfig";
-import Headers from "../Contracts/Headers";
+import Headers from "../Contracts/Types/Headers";
 
 export default class DefaultApiConfig implements ApiConfig {
     protected baseUrl: string = "";

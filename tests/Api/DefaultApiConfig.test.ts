@@ -1,6 +1,6 @@
 import { expect } from "chai";
 import DefaultApiConfig from "../../src/Api/DefaultApiConfig";
-import Headers from "../../src/Contracts/Headers";
+import Headers from "../../src/Contracts/Types/Headers";
 
 describe('DefaultApiConfig class', function() {
     const apiConfig = new DefaultApiConfig('https://tmgr.dev/api/')

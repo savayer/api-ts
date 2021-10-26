@@ -1,14 +1,12 @@
-import {Repository} from "../Contracts/Repository";
-import Api from "../Contracts/Api";
+import Repository from "../Contracts/Repository";
 import Model from "../Contracts/Model";
-import {UUID} from "../Contracts/UUID";
-import TmgrApi from "../Api/TmgrApi";
+import UUID from "../Contracts/Types/UUID";
 
 export default class TaskRepository implements Repository<Model>{
-    private _resource: TmgrApi;
+    private _resource;
     private _prefix: string;
 
-    constructor(resource: TmgrApi) {
+    constructor(resource) {
         this._resource = resource;
         this._prefix = '/tasks';
     }

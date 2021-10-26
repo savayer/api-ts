@@ -1,4 +1,4 @@
-import Headers from "../Contracts/Headers";
+import Headers from "../Contracts/Types/Headers";
 import ApiResponse from "../Contracts/ApiResponse";
 
 export default class DefaultApiResponse<D> implements ApiResponse<D> {

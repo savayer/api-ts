@@ -1,4 +1,4 @@
-import Headers from "./Headers";
+import Headers from "./Types/Headers";
 
 export default interface ApiResponse<T> {
     getData (): T;
