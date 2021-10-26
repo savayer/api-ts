@@ -1,7 +1,7 @@
-import {UUID} from "./UUID";
+import UUID from "./Types/UUID";
 import Url from "./Url";
 
-export interface Repository<T> extends Url {
+export default interface Repository<T> extends Url {
     find (id: UUID): T;
     store (model: T): T;
     update (id: UUID, model: T): T;
